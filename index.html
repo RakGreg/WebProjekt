@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kő Papír Olló</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div class="split left">
+        <h1>Kő - Papír - Olló</h1>
+
+        <div class="choices">
+            <button onclick="playGame('KŐ')">🪨</button>
+            <button onclick="playGame('PAPÍR')">🧻</button>
+            <button onclick="playGame('OLLÓ')">✂️</button>
+        </div>
+
+        <div id="playerDisplay">JÁTÉKOS: </div>
+        <div id="computerDisplay">GÉP: </div>
+        <div id="resultDisplay"></div>
+
+        <div class="scoreDisplay">Játékos pontszáma:
+            <span id="playerScoreDisplay">0</span>
+        </div>
+        <div class="scoreDisplay">Gép pontszáma:
+            <span id="computerScoreDisplay">0</span>
+        </div>
+        </div>
+        <!--jobb oldala a képernyőnek-->>
+        <div class="split right">
+            <div class="character-container">
+                <div class="character" id="player-character">
+                    <img src="player_character.png" alt="Player Character">
+                    <div class="health-bar" id="player-health-bar"></div>
+                </div>
+                <div class="character" id="computer-character">
+                    <img src="computer_character.png" alt="Computer Character">
+                    <div class="health-bar" id="computer-health-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

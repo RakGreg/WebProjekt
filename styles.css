@@ -1,0 +1,102 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+.left h1{
+    font-size: 3.5rem;
+    color: hsl(160, 73%, 34%);
+    text-align: center;
+}
+.choices{
+    margin-bottom: 30px;
+}
+.choices button{
+    font-size: 7.5rem;
+    min-width: 160px;
+    margin: 0 10px;
+    border-radius: 250px;
+    background-color: hsl(152, 73%, 64%);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    outline: none !important;
+}
+.choices button:hover{
+    background-color: hsl(152, 73%, 84%);
+}
+
+#playerDisplay,#computerDisplay{
+    font-size: 2.5rem;
+}
+#resultDisplay{
+    font-size: 5rem;
+    margin: 30px 0;
+}
+.scoreDisplay{
+    font-size: 2rem;
+}
+
+.greenText,#playerScoreDisplay{
+    color: hsl(152, 73%, 64%);
+}
+.redText,#computerScoreDisplay{
+    color:red;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+.left {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right {
+    right: 0;
+}
+
+.character-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.character {
+    text-align: center;
+}
+
+.character img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.health-bar-container {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.health-bar {
+    width: 100%;
+    height: 40px;
+    background-color: green;
+    outline: auto;
+}
+
+.character.low-health .health-bar {
+    background-color: red;
+}
+
